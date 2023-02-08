@@ -10,6 +10,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import game.Game;
+import input.KeyHandler;
+import input.MouseHandler;
 import util.Constants;
 
 public class Display extends JPanel {
@@ -27,6 +29,8 @@ public class Display extends JPanel {
 		this.setPreferredSize(new Dimension(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT));
 		this.setDoubleBuffered(true);
 		this.setBackground(Color.black);
+		this.addKeyListener(KeyHandler.get());
+		this.addMouseListener(MouseHandler.get());
 		this.setFocusable(true);
 		frame.add(this);
 		frame.pack();
