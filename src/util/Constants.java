@@ -16,4 +16,9 @@ public class Constants {
 	public static final int FPS = 120;
     public static final int UPS = 100;
 
+    public static final int MAX_WORLD_COL = 50;
+	public static final int MAX_WORLD_ROW = 50;
+	
+	public static final int MAP_WIDTH = MAX_WORLD_COL * TILE_SIZE;
+	public static final int MAP_HEIGHT = MAX_WORLD_ROW * TILE_SIZE;
 }

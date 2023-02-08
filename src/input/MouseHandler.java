@@ -3,6 +3,8 @@ package input;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import display.Camera;
+
 public class MouseHandler extends MouseAdapter {
 
 	private static MouseHandler Instance;
@@ -68,13 +70,13 @@ public class MouseHandler extends MouseAdapter {
 		return get().yPos;
 	}
 
-//	public static float getXWorld() {
-//		return get().xPos + Camera.getX();
-//	}
-//
-//	public static float getYWorld() {
-//		return get().yPos + Camera.getY();
-//	}
+	public static float getXWorld() {
+		return get().xPos + Camera.getX();
+	}
+
+	public static float getYWorld() {
+		return get().yPos + Camera.getY();
+	}
 
 	public static float getDeltaX() {
 		return get().deltaX;
