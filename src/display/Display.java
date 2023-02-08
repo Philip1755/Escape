@@ -1,5 +1,6 @@
 package display;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -25,6 +26,7 @@ public class Display extends JPanel {
 		
 		this.setPreferredSize(new Dimension(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT));
 		this.setDoubleBuffered(true);
+		this.setBackground(Color.black);
 		this.setFocusable(true);
 		frame.add(this);
 		frame.pack();
