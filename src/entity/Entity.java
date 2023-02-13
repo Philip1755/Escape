@@ -13,7 +13,7 @@ public abstract class Entity {
 	protected float animationSpeed;
 	
 	protected float worldX, worldY;
-	protected float speed;
+	protected float speed, normalSpeed, diagonalSpeed;
 	
 	protected int xDir, yDir;
 
@@ -21,6 +21,8 @@ public abstract class Entity {
 		this.worldX = worldX;
 		this.worldY = worldY;
 		this.speed = speed;
+		this.normalSpeed = speed;
+		this.diagonalSpeed = (float) (speed / Math.sqrt(2));
 		this.xDir = 0;
 		this.yDir = 0;
 		this.spriteCounter = 0;

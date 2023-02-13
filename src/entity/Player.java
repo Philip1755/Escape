@@ -70,6 +70,8 @@ public class Player extends Entity {
 		if (KeyHandler.isKeyPressed(KeyEvent.VK_D))
 			xDir++;
 
+		speed = xDir != 0 && yDir != 0 ? diagonalSpeed : normalSpeed;
+
 		worldX += xDir * speed;
 		worldY += yDir * speed;
 		clampPosition();
