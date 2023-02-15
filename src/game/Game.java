@@ -2,9 +2,7 @@ package game;
 
 import java.awt.Graphics2D;
 
-import display.Camera;
 import display.Display;
-import entity.Player;
 import scene.MenuScene;
 import scene.OptionScene;
 import scene.PlayScene;

@@ -15,7 +15,7 @@ import input.MouseHandler;
 import util.Constants;
 
 public class Display extends JPanel {
-
+	
 	private Game game;
 	private JFrame frame;
 	
@@ -31,6 +31,7 @@ public class Display extends JPanel {
 		this.setBackground(Color.white);
 		this.addKeyListener(KeyHandler.get());
 		this.addMouseListener(MouseHandler.get());
+		this.addMouseMotionListener(MouseHandler.get());
 		this.setFocusable(true);
 		frame.add(this);
 		frame.pack();

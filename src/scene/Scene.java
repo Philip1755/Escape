@@ -10,10 +10,7 @@ public abstract class Scene {
 
     public Scene(Game game) {
         this.game = game;
-        init();
     }
-
-    protected abstract void init();
 
     public abstract void update();
 

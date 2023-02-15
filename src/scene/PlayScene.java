@@ -12,10 +12,7 @@ public class PlayScene extends Scene {
 
     public PlayScene(Game game) {
         super(game);
-    }
-
-    @Override
-    protected void init() {
+        
         player = new Player();
         Camera.focusOn(player);
     }
