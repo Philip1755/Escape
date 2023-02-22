@@ -22,7 +22,7 @@ public class MenuScene extends Scene {
 		super(game);
 
 		headingFont = new Font("Monospaced", Font.BOLD, 30 * Constants.SCALE);
-		displayText = "Menu";
+		displayText = "ESCAPE";
 		textX = 0;
 		textY = 0;
 		playButton = new MyButton("Play", Constants.SCREEN_WIDTH / 2,

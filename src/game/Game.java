@@ -4,7 +4,7 @@ import java.awt.Graphics2D;
 
 import display.Display;
 import scene.MenuScene;
-import scene.OptionScene;
+import scene.SettingScene;
 import scene.PlayScene;
 import scene.Scene;
 
@@ -44,7 +44,7 @@ public class Game {
 				scene = new PlayScene(this);
 				break;
 			case OPTIONS:
-				scene = new OptionScene(this);
+				scene = new SettingScene(this);
 				break;
 		}
 	}

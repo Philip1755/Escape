@@ -8,7 +8,7 @@ import util.Constants;
 
 import java.awt.*;
 
-public class OptionScene extends Scene {
+public class SettingScene extends Scene {
 
 	private Font headingFont;
 	private String displayText;
@@ -16,7 +16,7 @@ public class OptionScene extends Scene {
 	
 	private MyButton menuButton;
 
-	public OptionScene(Game game) {
+	public SettingScene(Game game) {
 		super(game);
 
 		headingFont = new Font("Monospaced", Font.BOLD, 25 * Constants.SCALE);
