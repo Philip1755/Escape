@@ -2,31 +2,30 @@ package game;
 
 import java.awt.Graphics2D;
 
-import display.Camera;
 import display.Display;
-import entity.Player;
+import scene.MenuScene;
+import scene.SettingScene;
+import scene.PlayScene;
+import scene.Scene;
 
 public class Game {
 
 	private Display display;
 
-	private Player player;
+	private Scene scene;
 	
 	public Game() {
-		player = new Player();
-		Camera.focusOn(player);
+		setState(GameStates.MENU);
 		
 		startGame();
 	}
 
 	public void update() {
-		player.update();
-		
-		Camera.update();
+		scene.update();
 	}
 	
 	public void render(Graphics2D g) {
-		player.render(g);
+		scene.render(g);
 	}
 	
 	private void startGame() {
@@ -35,7 +34,21 @@ public class Game {
 	}
 
 	//Getter and Setter
-	
+
+	public void setState(GameStates state) {
+		switch (state) {
+			case MENU:
+				scene = new MenuScene(this);
+				break;
+			case PLAY:
+				scene = new PlayScene(this);
+				break;
+			case OPTIONS:
+				scene = new SettingScene(this);
+				break;
+		}
+	}
+
 	public Display getDisplay() {
 		return display;
 	}

@@ -11,7 +11,7 @@ import util.ImageLoader;
 public class Player extends Entity {
 
 	public Player() {
-		super(500, 500, 3.5f);
+		super(50 * Constants.SCALE, 50 * Constants.SCALE, .6f * Constants.SCALE);
 
 		loadSprites();
 		currentSprite = idle1;
