@@ -52,7 +52,20 @@
       <recent name="src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DateienUmbennerTilemap">
+    <configuration name="DateienUmbennerTilemap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.DateienUmbennerTilemap" />
+      <module name="Escape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="Escape" />
@@ -68,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DateienUmbennerTilemap" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -88,6 +102,8 @@
       <workItem from="1675975621464" duration="266000" />
       <workItem from="1676052834061" duration="700000" />
       <workItem from="1676317668178" duration="646000" />
+      <workItem from="1677870646040" duration="1717000" />
+      <workItem from="1678034934054" duration="1883000" />
     </task>
     <servers />
   </component>
@@ -104,5 +120,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
