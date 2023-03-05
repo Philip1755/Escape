@@ -21,7 +21,9 @@ public class Map {
     }
 
     private void loadSprites() {
-        //tiles.add(new Tile(ImageLoader.getSprite("tiles", "placeholder.png"), false));
+        for (int i = 0; i < 504; i++) {
+            tiles.add(new Tile(ImageLoader.getSprite("tiles", i + ".png"), false));
+        }
     }
 
     public void render(Graphics2D g) {
@@ -37,9 +39,8 @@ public class Map {
 
         for (int y = yStart; y < yEnd; y++)
             for (int x = xStart; x < xEnd; x++)
-                g.fillRect((x * Constants.TILE_SIZE) - Camera.getXInt(), (y * Constants.TILE_SIZE) - Camera.getYInt(), Constants.TILE_SIZE, Constants.TILE_SIZE);
-//                g.drawImage(tiles.get(data.get(x, y)).getSprite(), (x * Constants.TILE_SIZE) - Camera.getXInt(),
-//                        (y * Constants.TILE_SIZE) - Camera.getYInt(), Constants.TILE_SIZE, Constants.TILE_SIZE, null);
+                g.drawImage(tiles.get(data.get(x, y)-1).getSprite(), (x * Constants.TILE_SIZE) - Camera.getXInt(),
+                        (y * Constants.TILE_SIZE) - Camera.getYInt(), Constants.TILE_SIZE, Constants.TILE_SIZE, null);
     }
 
     // Getter and Setter
